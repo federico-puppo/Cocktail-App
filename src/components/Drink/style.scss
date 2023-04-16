@@ -1,0 +1,32 @@
+@use "../../index" as *;
+
+.cocktail {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: $blue-neon-on;
+  text-shadow: $blue-neon-off 1px 0 10px;
+  font-size: 2rem;
+//   .image {
+//     width: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: $grey;
+//   }
+  .card {
+    margin: 1rem 1rem;
+    width: 350px;
+    border-color: $blue-neon-on;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: $blue-neon-off 1px 0 10px;
+    background-color: $grey;
+    &-header {
+      background-color: $black;
+    }
+    &-body {
+      background-color: $grey;
+      font-size: 0.8rem;
+    }
+  }
+}

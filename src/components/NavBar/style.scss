@@ -1,0 +1,40 @@
+@use "../../index" as *;
+
+.MyNavbar {
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+    .navbar-brand {
+
+      .logo {
+        max-height: 30px;
+        scale: 1.5;
+        filter: drop-shadow(0 0 0.5rem $blue-neon-off);
+        @include animation("flicker 7s infinite");
+      }
+
+      .brand-text {
+        color: $pink-neon-on;
+        @include animation("flicker 7s infinite");
+        text-shadow: 1px 1px 2px $pink-neon-off, 0 0 1em $pink-neon-on,
+          0 0 0.2em $pink-neon-shadow;
+        text-decoration: underline;
+        margin-left: 1rem;
+      }
+
+    }
+      .icon {
+        color: $pink-neon-off;
+
+        &:hover {
+          color: $pink-neon-on;
+          margin-top: -5px;
+          @include animation("flicker 7s infinite");
+          filter: drop-shadow(0 0 0.5rem $pink-neon-off);
+        }
+    }
+  }
+}

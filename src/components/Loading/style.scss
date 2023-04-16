@@ -1,0 +1,21 @@
+@use "../../index" as *;
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blue-neon-on;
+  text-shadow: $blue-neon-off 1px 0 10px;
+  font-size: 2rem;
+
+  .spinner {
+    scale: 1.5;
+    color: $blue-neon-off;
+    background-color: $blue-neon-on;
+    box-shadow: $blue-neon-off 1px 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+  }
+}

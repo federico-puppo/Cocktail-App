@@ -1,0 +1,10 @@
+@use "../../index" as *;
+
+.randomButton {
+  color: $blue-neon-on !important;
+  background-color: $black;
+  border-color: $blue-neon-off !important;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: .25em .25em;
+}
