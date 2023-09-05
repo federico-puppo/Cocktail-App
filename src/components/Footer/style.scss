@@ -11,6 +11,7 @@
 
   .navbar-brand {
     .logo {
+      display: flex;
       max-height: 30px;
       scale: 1.3;
       filter: drop-shadow(0 0 0.5rem $pink-neon-off);
@@ -21,7 +22,6 @@
     color: $pink-neon-off;
     display: flex;
     @include animation("flicker 7s infinite");
-    
   }
   a {
     color: $pink-neon-off !important;
@@ -30,7 +30,6 @@
     align-items: center;
 
     @include animation("flicker 7s infinite");
-
 
     &:hover {
       color: $pink-neon-on !important;

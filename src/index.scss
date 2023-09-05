@@ -2,15 +2,13 @@
 
 $black: #252525;
 $grey: #212121;
-$blue:#08085E;
-$light-grey:#323232;
-$blue-neon-on:#14FFEC;
-$blue-neon-off:#0D7377;
-$pink-neon-on:#ff66ff;
-$pink-neon-off:#df00df;
-$pink-neon-shadow:#82047a;
-
-
+$blue: #08085e;
+$light-grey: #323232;
+$blue-neon-on: #14ffec;
+$blue-neon-off: #0d7377;
+$pink-neon-on: #ff66ff;
+$pink-neon-off: #df00df;
+$pink-neon-shadow: #82047a;
 
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
@@ -25,7 +23,6 @@ $pink-neon-shadow:#82047a;
   -webkit-animation: #{$str};
   animation: #{$str};
 }
-
 
 @include keyframes(flicker) {
   from {
@@ -154,17 +151,24 @@ $pink-neon-shadow:#82047a;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  #root {
-    width: 100%;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
